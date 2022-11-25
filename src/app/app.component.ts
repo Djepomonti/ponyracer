@@ -2,9 +2,11 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'ns-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  template: `
+  <h1>PonyRacer</h1>
+  <ns-races (newRaceAvailable)="onNewRace()"></ns-races>`
 })
 export class AppComponent {
-  title = 'ponyracer';
+  onNewRace(): void {
+  };
 }
